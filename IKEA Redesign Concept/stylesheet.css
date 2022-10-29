@@ -1,0 +1,141 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  a {
+    color: #333;
+    text-decoration: none
+  }
+
+#navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    margin-top: 1rem;
+}
+
+#navbar .navbar__first-container,
+#navbar .navbar__second-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#navbar #logo {
+    padding: 0 3rem;
+}
+
+#navbar .navbar__first-container .navbar-element .link,
+#navbar .navbar__second-container .navbar-element .link {
+  display: inline-block;
+  position: relative;
+}
+
+#navbar .navbar__first-container .navbar-element .link::after,
+#navbar .navbar__second-container .navbar-element .link::after  {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+#navbar .navbar__first-container .navbar-element .link:hover:after,
+#navbar .navbar__second-container .navbar-element .link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+main {
+  
+}
+
+main .main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.main-text h1 {
+  font-weight: 500;
+}
+
+.main-text p {
+  font-size: 0.75rem;
+}
+
+.main-text a {
+  margin: 1.5rem 0;
+  font-size: 0.75rem;
+  text-decoration: underline;
+}
+
+.main-image {
+  margin: 1rem;
+}
+
+.main-image img {
+  width: 100%;
+  border-radius: 10px;
+}
