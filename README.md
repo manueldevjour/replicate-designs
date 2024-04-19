@@ -7,4 +7,4 @@ First repo: IKEA Redesign Concept -> https://dribbble.com/shots/19218476-IKEA-Re
 
 | Name  	| Design  	| Web  	|
 |---	|---	|---	|
-| IKEA Redesign Concept| [Design](https://dribbble.com/shots/19218476-IKEA-Redesign-Concept)  	| [Web]([https://github.com/manueldevjour/replicate-designs/blob/main/IKEA%20Redesign%20Concept/index.html](https://manueldevjour.github.io/replicate-designs/IKEA%20Redesign%20Concept/index.html))  	|
+| IKEA Redesign Concept| [Design](https://dribbble.com/shots/19218476-IKEA-Redesign-Concept)  	| [Web](https://manueldevjour.github.io/replicate-designs/IKEA%20Redesign%20Concept/index.html)  	|
